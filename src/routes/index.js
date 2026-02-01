@@ -1,11 +1,11 @@
 // src/routes/index.js
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "../pages/Home";
-import Perfil from "../pages/Perfil";
-import Carrinho from "../pages/Carrinho";
-import Entrega from "../pages/Entrega";
-import Pagamento from "../pages/Pagamento";
-import Confirmacao from "../pages/Confirmacao";
+import Home from "../pages/home";
+import Perfil from "../pages/perfil";
+import Carrinho from "../pages/carrinho";
+import Entrega from "../pages/entrega";
+import Pagamento from "../pages/pagamento";
+import Confirmacao from "../pages/confirmacao";
 
 export default function AppRoutes() {
     return (
