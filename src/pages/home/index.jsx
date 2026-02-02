@@ -1,6 +1,6 @@
 // src/pages/Home/index.jsx
 import Banner from "../../components/Banner";
-import Card from "../../components/card";
+import Card from "../../components/Card";
 import { useState } from "react";
 import CartSidebar from "../../components/CartSidebar";
 
