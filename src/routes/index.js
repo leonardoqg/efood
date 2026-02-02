@@ -1,6 +1,6 @@
 // src/routes/index.js
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "../pages/home";
+import Home from "../pages/Home";
 import Perfil from "../pages/perfil";
 import Carrinho from "../pages/carrinho";
 import Entrega from "../pages/entrega";

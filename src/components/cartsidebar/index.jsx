@@ -5,37 +5,45 @@ const Sidebar = styled.div`
     position: fixed;
     right: 0;
     top: 0;
-    width: 350px;
+    width: 360px;
     height: 100%;
     background: #fff;
-    box-shadow: -2px 0 8px rgba(0,0,0,0.1);
-    padding: 20px;
+    box-shadow: -4px 0 12px rgba(0,0,0,0.1);
+    padding: 24px;
     display: flex;
     flex-direction: column;
-`;
+    `;
 
-const Item = styled.div`
+    const Item = styled.div`
     display: flex;
     justify-content: space-between;
-    margin-bottom: 12px;
-`;
+    margin-bottom: 16px;
+    font-size: 14px;
+    `;
 
-const Button = styled.button`
+    const Total = styled.h3`
     margin-top: auto;
-    padding: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    `;
+
+    const CheckoutButton = styled.button`
+    margin-top: 16px;
+    padding: 14px;
     background: #e63946;
     color: #fff;
     border: none;
-    border-radius: 6px;
+    border-radius: 8px;
     cursor: pointer;
-    font-weight: bold;
+    font-weight: 600;
 
     &:hover {
         background: #d62839;
     }
-`;
+    `;
 
-export default function CartSidebar({ itens }) {
+    export default function CartSidebar({ itens }) {
     const total = itens.reduce((acc, item) => acc + item.qtd * item.preco, 0);
 
     return (
@@ -47,9 +55,8 @@ export default function CartSidebar({ itens }) {
             <strong>R$ {(item.qtd * item.preco).toFixed(2)}</strong>
             </Item>
         ))}
-        <hr />
-        <h3>Total: R$ {total.toFixed(2)}</h3>
-        <Button>Finalizar Pedido</Button>
+        <Total>Total: R$ {total.toFixed(2)}</Total>
+        <CheckoutButton>Finalizar Pedido</CheckoutButton>
         </Sidebar>
     );
 }
