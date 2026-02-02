@@ -1,7 +1,7 @@
 // src/pages/Perfil/index.js
 import { useState } from "react";
-import Card from "../../components/card";
-import Modal from "../../components/modal";
+import Card from "../../components/Card";
+import Modal from "../../components/Modal";
 
 export default function Perfil() {
     const [produtoSelecionado, setProdutoSelecionado] = useState(null);
